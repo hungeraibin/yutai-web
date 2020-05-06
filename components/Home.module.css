@@ -1,0 +1,132 @@
+.video {
+  position: relative;
+}
+.slogan {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  color: #2b2e2e;
+}
+.descript {
+  width: 100%;
+  text-align: center;
+  padding: 105px 0 74px;
+}
+
+.content {
+  font-size: 20px;
+  color: #5f6464;
+  line-height: 54px;
+}
+
+.about {
+  width: 100%;
+  margin-bottom: 84px;
+}
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.details > li {
+  width: 32%;
+  margin-right: 1.5%;
+  height: 210px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.details > li:hover {
+  filter: contrast(160%);
+  transition: all 1s;
+}
+
+.details > li > p {
+  text-align: center;
+  line-height: 210px;
+  font-size: 24px;
+  color: white;
+}
+
+.company {
+  background-image: url('/img/desc.jpg');
+  background-size: cover;
+}
+
+.develop {
+  background-image: url('/img/develop.jpeg');
+  background-size: cover;
+}
+.place {
+  background-image: url('/img/place.jpg');
+  background-size: cover;
+}
+
+.business {
+  position: relative;
+  overflow: hidden;
+}
+
+.material {
+  width: 100%;
+  height: 700px;
+}
+
+.material > img {
+  width: 100%;
+  height: 100%;
+}
+
+.instruction {
+  position: absolute;
+  top: 16%;
+  left: 6.6%;
+  cursor: pointer;
+}
+
+.tip {
+  font-size: 30px;
+  color: #2a2e2e;
+}
+
+.subtip {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #5f6464;
+}
+
+@media screen and (max-width: 768px) {
+  .descript {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+  .content {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .about {
+    overflow-x: auto;
+    margin-bottom: 32px;
+  }
+  .details {
+    width: 759px;
+  }
+  .details > li {
+    width: 240px;
+    height: 180px;
+  }
+  .details > li > p {
+    line-height: 180px;
+  }
+  .business {
+    margin: 0 24px;
+  }
+  .material {
+    height: 400px;
+  }
+}
